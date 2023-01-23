@@ -1,5 +1,5 @@
 # Lark bot Message Card Builder
-**For Context this library is used for sending message card on larksuite Messenger, this would save your time building json strings just of the layout of your message card**
+**For Context this library is used for sending message card on larksuite Messenger, this would save your time building json strings just for the layout of your message card**
 
 ## To get Started
 You need to install the necessary third-party libaries to make things work
@@ -16,7 +16,7 @@ Copy this line to your terminal to install these libraries
 
 # Documentation
 
-Import the libaries following its methods and classes
+Import the libraries and create instance
 
 ```js
 import { ButtonType, Colors, MessageCard } from "./lark_msgcard/src/messageCard";
@@ -24,7 +24,7 @@ import { Credentials, MsgType, Token } from "./lark_msgcard/src/token";
 const creds = new Credentials();
 ```
 
-Initialize your 
+Initialize 
 > app_id and app_secret
 
 ```js
@@ -71,7 +71,7 @@ You need to create instance of Message Card class and call every methods you nee
 
 The problemm here that if you call directly the msgCard instance you will get
 the incorrect value of JSON string which has "data" object that suposedly not
-to be included when making message card, so to fix this you then to assign
+to be included when making message card, so to fix this you need to assign
 the instance to variable and just call the method just like this
 
 ```js
@@ -93,7 +93,7 @@ Adding header is Optional but you can do it like this
 
 ## Elements
 
-The *Elements* is where the card contents wrap in there are many types of value you can put inside *Elements*
+The *Elements* is where the card contents wrap in, there are many types of value you can put inside *Elements*
 These are the following
 
  - Fields
