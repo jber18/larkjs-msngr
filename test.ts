@@ -3,8 +3,8 @@ import { Credentials, MsgType, Token } from "./src/token";
 const creds = new Credentials();
 
 
-creds.app_id = "<app_id_here";
-creds.app_secret = "app_secret_here";
+creds.app_id = "<app_id_here>";
+creds.app_secret = "<app_secret_here>";
 creds.img_path_file = "./file_path.png"; // This part is optional
 (async () => {
     const lark = new Token(creds);
