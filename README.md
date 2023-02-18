@@ -108,7 +108,7 @@ These are the following
  ```js
  const json = msgCard.generate().message_type()
         .generate().card().config(true, true)
-        .generate().card().header("PIF COLLECTION PIPELINE UPDATE", Colors.blue)
+        .generate().card().header("This is the header", Colors.blue)
         .generate().card().elements(
             msgCard.image(img_key,"This is Image Description"),
             msgCard.description("Hi <at id=all></at>,\n This is description"),
